@@ -14,20 +14,64 @@
 
 </head>
 <body>
-    <header>
-        <h1>Apodo de Jugador</h1>
+    <header class="w3-container w3-black ">
+        <h1 class="w3-center w3-opacity w3-xxxlarge style="text-shadow:1px 1px 0 #444">U I - Z O N A</h1>
         <!-- Estes es Nombre  de Artista  que  el Gamer quier tener  como Apodo en todos los  juegos que 
         el valla jugar y se suban a las  aplicaciones de  Video Streamer-->
-        <h4>Gamer</h4>
+        <h4 class="w3-center w3-opacity">Gamer</h4>
     </header>
-    <nav class="w3-container">
-        <ol class="w3-bar w3-black">
-            <li>Quien Soy</li>
-            <li>Como Empese</li>
-            <li>Juegos</li>
-            <li>Equipamento</li>
-            <li>Contacteme</li>
-        </ol>
+    <nav class="w3-bar w3-black">
+            <button class="w3-bar-item w3-button" onclick="openCity('QuienSoy')">Quien Soy</button>
+            <button class="w3-bar-item w3-button" onclick="openCity('ComoEmpese')">Como Emmpese</button>
+            <button class="w3-bar-item w3-button" onclick="openCity('Juegos')">Juegos</button>
+            <button class="w3-bar-item w3-button" onclick="openCity('Equipamento')">Equipamento</button>
+            <button class="w3-bar-item w3-button" onclick="openCity('Contactame')">Contacteme</button>
     </nav>
+    <div id="QuienSoy" class="w3-container w3-display-container texto" style="display:none">
+        <span onclick="this.parentElement.style.display='none'"
+        class="w3-button w3-large w3-display-topright">&times;</span>
+        <h2>KEILEN ANDREI</h2>
+        <p>Soy un niño,  nacido en Arauca, Colombia, me gusta los video juegos, es una  gran diversion,
+            pero aunque sean muy complacientes y  abrumadores, no dejos mis  estudios atras, mis padres me
+            apoyan siempre  y  cuando yo siga estudiando.
+        </p>
+        <p>Siempre complasco a mis padres en  cuanto al estudio, y hago las tareas, para que  ellos
+            me apoyen en este proyecto personal sin dejar mis  estudios  abandonados. Espero que ustedes
+            tambien sigan en sus estudios,  asi como  yo he podido estudiar y  dedicarme a esto que 
+            me  gusta, lo hago  como hobie.
+        </p>
+        <p>
+            Amigos, recuerden que  el quiere algo se  requiere de dedicación. administren su tiempo. att. Keilen.
+        </p>
+      </div>
+      <div id="ComoEmpese" class="w3-container w3-display-container texto" style="display:none">
+        <span onclick="this.parentElement.style.display='none'"
+        class="w3-button w3-large w3-display-topright">&times;</span>
+        <h2>EL COMIENZO</h2>
+        <p>Desde que me acuerdo mis padres tenian un ciberCafe, y a mi me  gustaba  mirar a los chicos que 
+            venian y a veces me ponian a  jugar con ellos y se  reian con migo de como movia los controles
+            me gustaba y  aun apagadas la consolas y  los  computadores yo moavia y jugaba  con los controles
+            del  negosio familiar.
+        </p>
+        <p>Luego ya  sabia  prenderlos y me ponia  a jugar solo, claro  que  mis padres me regañaban ya  que esto generaba
+            gasto  de  energia, pero igualmente se  reian y relataban de mis  pequeñas  travesuras en el negocio.
+        </p>
+        <p>
+            Normalmente, descargo  y pruebo los  jeugos, en los celulares de mis padres, veo muchos  videos de 
+            Youtuber en juegos  como free fire, fornite, call of duty, entre otros  juegos  solo para  saber de que 
+            se puede hacer y luego entro ene l juego  y  aplico lo que  he  visto, llamelo trucos de  juego o algo asi, pero
+            he  podido tener mas  jugabilidad y optener  mas  experiencia en los  juegos.
+        </p>
+      </div>
+      <script>
+        function openCity(textoName) {
+          var i;
+          var x = document.getElementsByClassName("texto");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          document.getElementById(textoName).style.display = "block";  
+        }
+        </script>
 </body>
 </html>

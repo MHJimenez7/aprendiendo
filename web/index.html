@@ -22,12 +22,18 @@
         <h4 class="w3-center w3-opacity">Gamer</h4>
     </header>
     <nav class="w3-bar w3-black">
+        <button class="w3-bar-item w3-button" onclick="openCity('Inicio')">Inicio</button>
             <button class="w3-bar-item w3-button" onclick="openCity('QuienSoy')">Quien Soy</button>
             <button class="w3-bar-item w3-button" onclick="openCity('ComoEmpese')">Como Emmpese</button>
             <button class="w3-bar-item w3-button" onclick="openCity('Juegos')">Juegos</button>
             <button class="w3-bar-item w3-button" onclick="openCity('Equipamento')">Equipamento</button>
             <button class="w3-bar-item w3-button" onclick="openCity('Contactar')">Contacteme</button>
     </nav>
+    <div id="Inicio" class="w3-container w3-display-container texto" style="display:none">
+        <span onclick="this.parentElement.style.display='none'"
+        class="w3-button w3-large w3-display-topright">&times;</span>
+        <img src="/web/img/fondo.jpg" alt="fondo imagen inicial" class="w3-escala de grises-máx.">
+      </div>
     <div id="QuienSoy" class="w3-container w3-display-container texto" style="display:none">
         <span onclick="this.parentElement.style.display='none'"
         class="w3-button w3-large w3-display-topright">&times;</span>
@@ -125,6 +131,9 @@
             
             </form>
         </div>
+        <footer class="w3-conainer w3-black">
+            <h5 class="w3-center w3-opacity">Editado por Hernan Jimenez</h5>
+        </footer>
       <script>
         function openCity(textoName) {
           var i;
